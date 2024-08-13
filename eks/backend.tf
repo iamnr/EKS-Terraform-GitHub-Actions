@@ -8,10 +8,9 @@ terraform {
   }
   backend "s3" {
     bucket         = "terraformstatefiletest"
-    key            = "count"
+    key            = "eks"
     region         = "us-east-1"
     dynamodb_table = "roboshoplocking"
-    encrypt        = true
   }
 }
 
